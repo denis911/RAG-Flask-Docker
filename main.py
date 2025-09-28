@@ -3,7 +3,6 @@ from flask import Flask, request, jsonify
 # import requests 
 from minsearch import AppendableIndex
 from search_tools import SearchTools
-# from fastmcp import FastMCP
 from toyaikit.tools import wrap_instance_methods
 import json
 import os
@@ -61,6 +60,6 @@ def search():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000)
 
 
